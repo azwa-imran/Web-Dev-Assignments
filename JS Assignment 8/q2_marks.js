@@ -1,0 +1,11 @@
+let marks = [45, 78, 92, 61, 88, 54, 73, 95];
+console.log("Original marks=", marks);
+let practiceMarks = marks.map(mark => mark + 5);
+console.log("Practice marks=", practiceMarks);
+let passedMarks = marks.filter(mark => mark >= 70);
+console.log("Marks 70 or above=", passedMarks);
+let firstTopMark = marks.find(mark => mark > 90);
+console.log("First=", firstTopMark);
+let totalMarks = marks.reduce((sum, mark) => sum + mark, 0);
+console.log("Total marks=", totalMarks);
+console.log("Original marks=", marks);
