@@ -1,0 +1,14 @@
+const groupA = ["Ali", "Ahmed", "Hamza"];
+const groupB = ["Sara", "Ayesha", "Laiba"];
+const profile = { name: "Laiba", class: "Web Development", city: "Karachi" };
+const combinedClass = [...groupA, ...groupB];
+const groupACopy = [...groupA];
+groupACopy.push("Ashmil");
+const updatedCity = { ...profile, city: "Lahore" };
+const Email = { ...profile, email: "laiba33@gmail.com" };
+console.log("Group A (original)=", groupA);
+console.log("Group A (updated)=", groupACopy);
+console.log("Combined class=", combinedClass);
+console.log("Profile (original)=", profile);
+console.log("Profile (updated)=", updatedCity);
+console.log("Profile=",Email);

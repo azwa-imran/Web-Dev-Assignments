@@ -1,0 +1,12 @@
+import { courses } from "./courses.js";
+import { formatCourse } from"./courseUtils.js";
+const { name, fee } = courses[0];
+console.log(`Selected course= ${name}, Fee=Rs:${fee}`);
+const newCourse = { name: "AI Automation", instructor: "Zara Malik", duration: "2 months", fee: 18000 };
+const allCourses = [...courses, newCourse];
+const updatedCourse = { ...courses[0], fee: 13500 };
+console.log("All Courses");
+allCourses.forEach(course => console.log(formatCourse(course)));
+console.log("Updated Course");
+console.log(formatCourse(updatedCourse));
+console.log("Original courses=", courses);
