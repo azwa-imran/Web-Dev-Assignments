@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    background-color: cream;
+    text-align: center;
+}
+h1 {
+    background-color: #800020;
+    color: cream;
+    padding: 20px;
+}
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background-color: #FFFDD0;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+}
+.card h3 {
+    color: #800020;
+}
+.price {
+    color: green;
+    font-weight: bold;
+}
+#loading {
+    color: green;
+    font-size: 20px;
+}
+#error {
+    color: #800020;
+}

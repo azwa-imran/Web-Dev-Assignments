@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API CRUD Practice</title>
+    <link rel="stylesheet" href="Q1_crud.css">
+</head>
+<body>
+    <header>
+        <h1>Fetch API CRUD Practice</h1>
+        <p>GET · POST · PUT · PATCH · DELETE</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Add a new post (POST)</h2>
+            <form id="postForm">
+                <div class="row">
+                    <input type="text" id="titleInput" placeholder="Post title" required>
+                    <input type="number" id="userIdInput" value="1" min="1" required>
+                </div>
+                <textarea id="bodyInput" placeholder="Write post content..." required></textarea>
+                <div class="buttons">
+                    <button type="submit" class="btn add">Add Post — POST</button>
+                    <button type="button" id="reloadBtn" class="btn reload">Reload Posts — GET</button>
+                </div>
+            </form>
+            <div id="messageBox" class="message"></div>
+            <p class="note">Practice API: JSONPlaceholder. It returns example responses, but POST/PUT/PATCH/DELETE changes are not permanently saved on its server. This page updates the local display so you can see each operation.</p>
+        </section>
+
+        <section class="card">
+            <div class="posts-header">
+                <h2>Posts</h2>
+                <span id="postCount">0 posts shown</span>
+            </div>
+            <div id="postsContainer" class="posts-grid"></div>
+        </section>
+    </main>
+<script src="Q1_crud.js"></script>
+</body>
+</html>

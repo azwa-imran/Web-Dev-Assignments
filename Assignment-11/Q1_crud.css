@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f2fd;
+    color: #333333;
+}
+header {
+    background-color: #6c4bb5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header p {
+    font-size: 12px;
+    margin-top: 4px;
+    color: #f7f2fd;
+}
+main {
+    max-width: 760px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(108, 75, 181, 0.15);
+}
+.card h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #6c4bb5;
+}
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+input {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 13px;
+}
+textarea {
+    width: 100%;
+    height: 70px;
+    padding: 9px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    font-size: 13px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+.buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.btn {
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.add {
+    background-color: #6c4bb5;
+}
+.reload {
+    background-color: #d9487d;
+}
+.put {
+    background-color: #6c4bb5;
+}
+.patch {
+    background-color: #d9487d;
+}
+.delete {
+    background-color: white;
+    color: #d9487d;
+    border: 1px solid #d9487d;
+}
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: none;
+}
+.message.success {
+    display: block;
+    background-color: #f7f2fd;
+    color: #6c4bb5;
+}
+.message.error {
+    display: block;
+    background-color: #d9487d;
+    color: white;
+}
+.message.loading {
+    display: block;
+    background-color: #f7f2fd;
+    color: #6c4bb5;
+    border: 1px dashed #6c4bb5;
+}
+.note {
+    font-size: 10px;
+    color: #777777;
+}
+.posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.posts-header span {
+    font-size: 11px;
+    color: #777777;
+}
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.post-card {
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+}
+.post-meta {
+    font-size: 10px;
+    color: #999999;
+    margin-bottom: 6px;
+}
+.post-card h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #6c4bb5;
+}
+.post-card p {
+    color: #555555;
+    margin-bottom: 10px;
+}
+.post-actions {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
